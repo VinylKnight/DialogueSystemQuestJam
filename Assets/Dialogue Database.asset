@@ -181,6 +181,20 @@ MonoBehaviour:
       value: Number of Babies collected
       type: 0
       typeString: 
+  - id: 4
+    fields:
+    - title: Name
+      value: Player
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: 1
+      type: 5
+      typeString: CustomFieldType_Actor
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
   conversations:
   - id: 1
     fields:
@@ -324,7 +338,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Got a minute, [Var=actor]?
+        value: Got a minute?
         type: 0
         typeString: 
       - title: Parenthetical
@@ -397,7 +411,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: I was at work.
+        value: Sure I'll help out
         type: 0
         typeString: 
       - title: Parenthetical
@@ -431,7 +445,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: Variable["AtWork"] = true
+      userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -439,81 +453,8 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null
       canvasRect:
         serializedVersion: 2
-        x: 1368.1082
-        y: 218.23529
-        width: 160
-        height: 30
-    - id: 3
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: 
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 2
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: I was at home.
-        type: 0
-        typeString: 
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: 
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 1
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 1
-        originDialogueID: 3
-        destinationConversationID: 1
-        destinationDialogueID: 4
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: Variable["AtWork"] = false
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      canvasRect:
-        serializedVersion: 2
-        x: 1089.537
-        y: 212.35297
+        x: 1225.251
+        y: 216.80676
         width: 160
         height: 30
     - id: 4
@@ -543,7 +484,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Lacy Devine was found dead at your shop. Time of death was 9PM.
+        value: Thank you so much. I hope you don't have to help alot of people.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -616,7 +557,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: I was home asleep.
+        value: Don't worry, Detective
         type: 0
         typeString: 
       - title: Parenthetical
@@ -642,19 +583,7 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 1
-        originDialogueID: 5
-        destinationConversationID: 1
-        destinationDialogueID: 6
-        isConnector: 0
-        priority: 2
-      - originConversationID: 1
-        originDialogueID: 5
-        destinationConversationID: 1
-        destinationDialogueID: 7
-        isConnector: 0
-        priority: 2
+      outgoingLinks: []
       conditionsString: 
       userScript: 
       onExecute:
@@ -666,219 +595,6 @@ MonoBehaviour:
         serializedVersion: 2
         x: 1221.4695
         y: 364.03363
-        width: 160
-        height: 30
-    - id: 6
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: 
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 2
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: Didn't you say you were at work? You're under arrest.
-        type: 0
-        typeString: 
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: 
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 1
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 1
-        originDialogueID: 6
-        destinationConversationID: 1
-        destinationDialogueID: 8
-        isConnector: 0
-        priority: 2
-      - originConversationID: 1
-        originDialogueID: 6
-        destinationConversationID: 1
-        destinationDialogueID: 10
-        isConnector: 0
-        priority: 2
-      conditionsString: Variable["AtWork"] == true
-      userScript: '[em1][Run.][/em1];'
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      canvasRect:
-        serializedVersion: 2
-        x: 1347.0997
-        y: 467.3949
-        width: 160
-        height: 30
-    - id: 7
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: 
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 2
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: Checks out. You're free to go.
-        type: 0
-        typeString: 
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: 
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 1
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks: []
-      conditionsString: Variable["AtWork"] == false
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      canvasRect:
-        serializedVersion: 2
-        x: 1099.133
-        y: 478.73944
-        width: 160
-        height: 30
-    - id: 8
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: 
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: I want a lawyer!
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 2
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: I want a lawyer!
-        type: 0
-        typeString: 
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: 
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 1
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks: []
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      canvasRect:
-        serializedVersion: 2
-        x: 1217.558
-        y: 556.2548
         width: 160
         height: 30
     - id: 9
@@ -908,7 +624,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Where were you at 9PM?
+        value: People seem to be having issues see if you can help them.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -938,12 +654,6 @@ MonoBehaviour:
       - originConversationID: 1
         originDialogueID: 9
         destinationConversationID: 1
-        destinationDialogueID: 3
-        isConnector: 0
-        priority: 2
-      - originConversationID: 1
-        originDialogueID: 9
-        destinationConversationID: 1
         destinationDialogueID: 2
         isConnector: 0
         priority: 2
@@ -960,75 +670,8 @@ MonoBehaviour:
         y: 151.1108
         width: 160
         height: 30
-    - id: 10
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: 
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 2
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: '[em1][Run.][/em1]'
-        type: 0
-        typeString: 
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: 
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 1
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks: []
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-        m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      canvasRect:
-        serializedVersion: 2
-        x: 1462.3734
-        y: 552.6834
-        width: 160
-        height: 30
-    canvasScrollPosition: {x: 277.91705, y: 0}
-    canvasZoom: 0.27999997
+    canvasScrollPosition: {x: 788.3125, y: 134.72058}
+    canvasZoom: 0.45999986
   - id: 2
     fields:
     - title: Title
@@ -1357,8 +1000,8 @@ MonoBehaviour:
         y: 53
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0.023145735}
-    canvasZoom: 0.91
+    canvasScrollPosition: {x: 76.14122, y: 9.440775}
+    canvasZoom: 1.2399999
   - id: 3
     fields:
     - title: Title

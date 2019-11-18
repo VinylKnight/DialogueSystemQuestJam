@@ -1467,6 +1467,12 @@ MonoBehaviour:
         destinationDialogueID: 3
         isConnector: 0
         priority: 2
+      - originConversationID: 3
+        originDialogueID: 0
+        destinationConversationID: 3
+        destinationDialogueID: 2
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -1607,7 +1613,7 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: CurrentQuestState("Get Babies") == "unassigned"
+      conditionsString: (CurrentQuestState("Get Babies") == "success")
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -1906,8 +1912,8 @@ MonoBehaviour:
         y: 143
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.94000006
+    canvasScrollPosition: {x: 0, y: 26.651896}
+    canvasZoom: 0.7600002
   syncInfo:
     syncActors: 0
     syncItems: 0
